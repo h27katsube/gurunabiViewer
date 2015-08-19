@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BDBF187F21CD1273909BB493 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B547328C7B9BF4FB6E3760 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		EC22C14E1B82CEFA00522728 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22C14D1B82CEFA00522728 /* AppDelegate.swift */; };
 		EC22C1501B82CEFA00522728 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22C14F1B82CEFA00522728 /* ViewController.swift */; };
 		EC22C1531B82CEFA00522728 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC22C1511B82CEFA00522728 /* Main.storyboard */; };
 		EC22C1551B82CEFA00522728 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC22C1541B82CEFA00522728 /* Images.xcassets */; };
-		EC22C1581B82CEFA00522728 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC22C1561B82CEFA00522728 /* LaunchScreen.xib */; };
 		EC22C1641B82CEFA00522728 /* internTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22C1631B82CEFA00522728 /* internTestTests.swift */; };
+		EC22C16E1B82D1CD00522728 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22C16D1B82D1CD00522728 /* APIClient.swift */; };
+		EC22C1701B82D31200522728 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22C16F1B82D31200522728 /* ItemCell.swift */; };
+		EC22C1771B82DDAB00522728 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22C1761B82DDAB00522728 /* EndPoints.swift */; };
+		EC22C1791B82DDED00522728 /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22C1781B82DDED00522728 /* SearchManager.swift */; };
+		EC22C17B1B82DE3D00522728 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22C17A1B82DE3D00522728 /* ItemViewController.swift */; };
+		EC22C17D1B82DE6F00522728 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22C17C1B82DE6F00522728 /* BrowserViewController.swift */; };
+		EC22C1811B83006700522728 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC22C1801B83006700522728 /* Launch Screen.xib */; };
+		EC22C1831B83092500522728 /* ItemJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22C1821B83092500522728 /* ItemJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +34,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		70DC94D4D1D0513BF07BE267 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		97C6515F4318CDF871BA5E76 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E8B547328C7B9BF4FB6E3760 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC22C1481B82CEFA00522728 /* internTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = internTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC22C14C1B82CEFA00522728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC22C14D1B82CEFA00522728 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC22C14F1B82CEFA00522728 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EC22C1521B82CEFA00522728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC22C1541B82CEFA00522728 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		EC22C1571B82CEFA00522728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EC22C15D1B82CEFA00522728 /* internTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = internTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC22C1621B82CEFA00522728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC22C1631B82CEFA00522728 /* internTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = internTestTests.swift; sourceTree = "<group>"; };
+		EC22C16D1B82D1CD00522728 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		EC22C16F1B82D31200522728 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		EC22C1761B82DDAB00522728 /* EndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		EC22C1781B82DDED00522728 /* SearchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
+		EC22C17A1B82DE3D00522728 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		EC22C17C1B82DE6F00522728 /* BrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
+		EC22C1801B83006700522728 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		EC22C1821B83092500522728 /* ItemJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDBF187F21CD1273909BB493 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +75,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D379E9FA42AC009306912E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8B547328C7B9BF4FB6E3760 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8CB94ACCDE3E3C6C79DF889 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70DC94D4D1D0513BF07BE267 /* Pods.debug.xcconfig */,
+				97C6515F4318CDF871BA5E76 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EC22C13F1B82CEFA00522728 = {
 			isa = PBXGroup;
 			children = (
 				EC22C14A1B82CEFA00522728 /* internTest */,
 				EC22C1601B82CEFA00522728 /* internTestTests */,
 				EC22C1491B82CEFA00522728 /* Products */,
+				D8CB94ACCDE3E3C6C79DF889 /* Pods */,
+				1D379E9FA42AC009306912E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,11 +115,15 @@
 		EC22C14A1B82CEFA00522728 /* internTest */ = {
 			isa = PBXGroup;
 			children = (
+				EC22C1711B82DCB600522728 /* Views */,
+				EC22C1721B82DCD800522728 /* Controllers */,
+				EC22C1731B82DD2200522728 /* Manager */,
+				EC22C1741B82DD3E00522728 /* Network */,
 				EC22C14D1B82CEFA00522728 /* AppDelegate.swift */,
 				EC22C14F1B82CEFA00522728 /* ViewController.swift */,
 				EC22C1511B82CEFA00522728 /* Main.storyboard */,
 				EC22C1541B82CEFA00522728 /* Images.xcassets */,
-				EC22C1561B82CEFA00522728 /* LaunchScreen.xib */,
+				EC22C1801B83006700522728 /* Launch Screen.xib */,
 				EC22C14B1B82CEFA00522728 /* Supporting Files */,
 			);
 			path = internTest;
@@ -112,6 +154,49 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EC22C1711B82DCB600522728 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC22C16F1B82D31200522728 /* ItemCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		EC22C1721B82DCD800522728 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC22C17A1B82DE3D00522728 /* ItemViewController.swift */,
+				EC22C17C1B82DE6F00522728 /* BrowserViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		EC22C1731B82DD2200522728 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EC22C1781B82DDED00522728 /* SearchManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		EC22C1741B82DD3E00522728 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EC22C1761B82DDAB00522728 /* EndPoints.swift */,
+				EC22C16D1B82D1CD00522728 /* APIClient.swift */,
+				EC22C1751B82DD5500522728 /* Model */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		EC22C1751B82DD5500522728 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC22C1821B83092500522728 /* ItemJSON.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC22C1671B82CEFA00522728 /* Build configuration list for PBXNativeTarget "internTest" */;
 			buildPhases = (
+				F97ABFA90F19FC7C9334C666 /* Check Pods Manifest.lock */,
 				EC22C1441B82CEFA00522728 /* Sources */,
 				EC22C1451B82CEFA00522728 /* Frameworks */,
 				EC22C1461B82CEFA00522728 /* Resources */,
+				44D23692E64DC7157AAA182C /* Embed Pods Frameworks */,
+				22F2F938020AE65B06396CBB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,8 +281,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC22C1531B82CEFA00522728 /* Main.storyboard in Resources */,
-				EC22C1581B82CEFA00522728 /* LaunchScreen.xib in Resources */,
 				EC22C1551B82CEFA00522728 /* Images.xcassets in Resources */,
+				EC22C1811B83006700522728 /* Launch Screen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,13 +295,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22F2F938020AE65B06396CBB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44D23692E64DC7157AAA182C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F97ABFA90F19FC7C9334C666 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EC22C1441B82CEFA00522728 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC22C1701B82D31200522728 /* ItemCell.swift in Sources */,
+				EC22C1831B83092500522728 /* ItemJSON.swift in Sources */,
+				EC22C1771B82DDAB00522728 /* EndPoints.swift in Sources */,
+				EC22C17B1B82DE3D00522728 /* ItemViewController.swift in Sources */,
+				EC22C1791B82DDED00522728 /* SearchManager.swift in Sources */,
 				EC22C1501B82CEFA00522728 /* ViewController.swift in Sources */,
 				EC22C14E1B82CEFA00522728 /* AppDelegate.swift in Sources */,
+				EC22C17D1B82DE6F00522728 /* BrowserViewController.swift in Sources */,
+				EC22C16E1B82D1CD00522728 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,14 +385,6 @@
 				EC22C1521B82CEFA00522728 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EC22C1561B82CEFA00522728 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC22C1571B82CEFA00522728 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -338,6 +473,7 @@
 		};
 		EC22C1681B82CEFA00522728 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70DC94D4D1D0513BF07BE267 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = internTest/Info.plist;
@@ -348,6 +484,7 @@
 		};
 		EC22C1691B82CEFA00522728 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97C6515F4318CDF871BA5E76 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = internTest/Info.plist;
@@ -409,6 +546,7 @@
 				EC22C1691B82CEFA00522728 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC22C16A1B82CEFA00522728 /* Build configuration list for PBXNativeTarget "internTestTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +555,7 @@
 				EC22C16C1B82CEFA00522728 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
