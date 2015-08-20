@@ -16,20 +16,6 @@ class ItemsViewController: UITableViewController {
     private var manager = SearchManager()
     @IBOutlet weak var searchbar: UISearchBar!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        refresh()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    @IBAction func refresh() {
-        //manager.searchItems(onDataChanged)
-    }
-    
     func onDataChanged(result: Result<ItemsJSON, NSError>) {
         if let value = result.value {
             items = value.items

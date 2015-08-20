@@ -80,9 +80,6 @@
                     <navigationItem key="navigationItem" title="アイテム一覧" id="seD-SJ-mJY"/>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="4aS-px-LKE">
                         <autoresizingMask key="autoresizingMask"/>
-                        <connections>
-                            <action selector="refresh" destination="jIW-vG-8cK" eventType="valueChanged" id="XeH-Ze-N9o"/>
-                        </connections>
                     </refreshControl>
                     <connections>
                         <outlet property="searchDisplayController" destination="kaL-fJ-ra5" id="eg0-UK-5KR"/>

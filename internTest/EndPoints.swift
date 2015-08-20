@@ -55,6 +55,6 @@ public struct SearchEndpoint: Endpoint {
     
     public init(keyword: String) {
         // applicationIdを自分のものに変えてください
-        parameters = [ "keyword": keyword, "format": "json", "applicationId": "42638659749243" ]
+        parameters = [ "keyword": keyword, "format": "json", "applicationId": "67839328247293802" ]
     }
 }

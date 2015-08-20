@@ -11,7 +11,6 @@ import UIKit
 import Result
 
 public class SearchManager: NSObject {
-    private typealias Reaponse = Result<[ItemJSON], NSError>
     
     lazy var client: APIClient = APIClient()
     
