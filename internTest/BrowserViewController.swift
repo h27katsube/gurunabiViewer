@@ -10,6 +10,7 @@ import UIKit
 
 class BrowserViewController: UIViewController {
     @IBOutlet weak var webView: UIWebView!
+    
     var URL: NSURL?
     
     override func viewDidLoad() {

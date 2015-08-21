@@ -11,18 +11,22 @@ import UIKit
 import SDWebImage
 
 class ItemCell: UITableViewCell {
-    
-    @IBOutlet weak var itemImageView: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var detailLabel: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
+
+    @IBOutlet weak var storeImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var opentimeLabel: UILabel!
     
     var item: ItemJSON? {
         didSet {
-            titleLabel.text = item?.title
-            detailLabel.text = item?.content
-            itemImageView.sd_setImageWithURL(NSURL(string: item!.largeImage!))
-            priceLabel.text = "\(item!.itemPrice.decimalFormat!)円"
+            nameLabel.text = item?.title
+            addressLabel.text = item?.content
+            opentimeLabel.text = item?.opentime
+            if let imageURL = item?.largeImage {
+                storeImageView.sd_setImageWithURL(imageURL)
+            } else {
+                storeImageView.image = nil
+            }
         }
     }
 }

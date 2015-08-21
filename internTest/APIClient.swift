@@ -17,7 +17,7 @@ public class APIClient: NSObject {
     let baseURLString: String
     
     public convenience override init() {
-        self.init(baseURLString: "https://app.rakuten.co.jp")
+        self.init(baseURLString: "http://api.gnavi.co.jp")
     }
     
     public init(baseURLString: String) {

@@ -47,14 +47,14 @@ public protocol Endpoint {
 }
 
 public struct SearchEndpoint: Endpoint {
-    public var path = "/services/api/BooksTotal/Search/20130522"
+    public var path = "/RestSearchAPI/20150630/"
     public var method = Method.GET
     public var parameters: [String : AnyObject]
     public typealias Response = ItemsJSON
     public var parser: AnyObject? -> Result<Response, NSError> = parse
     
-    public init(keyword: String) {
-        // applicationIdを自分のものに変えてください
-        parameters = [ "keyword": keyword, "format": "json", "applicationId": "67839328247293802" ]
+    public init(name: String) {
+        // keyidを自分のものに変えてください
+        parameters = [ "name": name, "format": "json", "keyid": "72847290835367264872" ]
     }
 }

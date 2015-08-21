@@ -12,13 +12,13 @@ import Result
 
 class ItemsViewController: UITableViewController {
     
-    private var items = [ItemJSON]()
+    private var rests = [ItemJSON]()
     private var manager = SearchManager()
     @IBOutlet weak var searchbar: UISearchBar!
     
     func onDataChanged(result: Result<ItemsJSON, NSError>) {
         if let value = result.value {
-            items = value.items
+            rests = value.rests
             tableView.reloadData()
         }
         refreshControl?.endRefreshing()
@@ -36,18 +36,19 @@ class ItemsViewController: UITableViewController {
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         manager.searchItems(searchBar.text, handler: onDataChanged);
+        searchBar.resignFirstResponder()
     }
 }
 
 extension ItemsViewController: UITableViewDataSource {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        return rests.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ItemCell", forIndexPath: indexPath) as! ItemCell
-        cell.item = items[indexPath.row]
+        cell.item = rests[indexPath.row]
         return cell
     }
     

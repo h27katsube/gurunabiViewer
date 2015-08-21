@@ -11,15 +11,15 @@ import UIKit
 import Mantle
 
 public class ItemsJSON: MTLModel, MTLJSONSerializing {
-    public var items = [ItemJSON]()
+    public var rests = [ItemJSON]()
     
     public class func JSONKeyPathsByPropertyKey() -> [NSObject : AnyObject]! {
         return [
-            "items": "Items",
+            "rests": "rest",
         ]
     }
     
-    public class func itemsJSONTransformer() ->NSValueTransformer {
+    public class func restsJSONTransformer() ->NSValueTransformer {
         return MTLJSONAdapter.arrayTransformerWithModelClass(ItemJSON.self)
     }
 }
@@ -27,24 +27,27 @@ public class ItemsJSON: MTLModel, MTLJSONSerializing {
 public class ItemJSON: MTLModel, MTLJSONSerializing {
     
     public var title: String?
-    public var author: String?
     public var itemURL: NSURL?
     public var content: String?
-    public var largeImage: String?
-    public var itemPrice = 0
+    public var largeImage: NSURL?
+    public var opentime: String?
+
     
     public class func JSONKeyPathsByPropertyKey() -> [NSObject : AnyObject]! {
         return [
-            "title": "Item.title",
-            "author": "Item.author",
-            "itemURL": "Item.itemUrl",
-            "content": "Item.itemCaption",
-            "largeImage": "Item.largeImageUrl",
-            "itemPrice": "Item.itemPrice",
+            "title": "name",
+            "itemURL": "url_mobile",
+            "content": "address",
+            "largeImage": "image_url.shop_image1",
+            "opentime": "opentime",
         ]
     }
     
     public class func itemURLJSONTransformer() -> NSValueTransformer {
+        return NSValueTransformer(forName: MTLURLValueTransformerName)!
+    }
+    
+    public class func largeImageJSONTransformer() -> NSValueTransformer {
         return NSValueTransformer(forName: MTLURLValueTransformerName)!
     }
 }

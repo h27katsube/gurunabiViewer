@@ -14,7 +14,7 @@ public class SearchManager: NSObject {
     
     lazy var client: APIClient = APIClient()
     
-    public func searchItems(keyword: String,handler: Result<ItemsJSON, NSError> -> ()) {
-        client.request(SearchEndpoint(keyword: keyword),handler:handler)
+    public func searchItems(name: String,handler: Result<ItemsJSON, NSError> -> ()) {
+        client.request(SearchEndpoint(name: name),handler:handler)
     }
 }
